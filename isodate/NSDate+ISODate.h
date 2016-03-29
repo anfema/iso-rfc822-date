@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDate (ISODate)
+- (nonnull NSString *)isoDateString;
 - (instancetype)initWithISODateString:(NSString *)string;
 @end
 
 @interface NSDate (RFC822Date)
+- (nonnull NSString *)rfc822DateString;
 - (instancetype)initWithRFC822DateString:(NSString *)string;
 @end

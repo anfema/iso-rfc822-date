@@ -10,10 +10,10 @@
 
 @interface NSDate (ISODate)
 - (nonnull NSString *)isoDateString;
-- (instancetype)initWithISODateString:(NSString *)string;
+- (nullable instancetype)initWithISODateString:(nonnull NSString *)string;
 @end
 
 @interface NSDate (RFC822Date)
 - (nonnull NSString *)rfc822DateString;
-- (instancetype)initWithRFC822DateString:(NSString *)string;
+- (nullable instancetype)initWithRFC822DateString:(nonnull NSString *)string;
 @end
